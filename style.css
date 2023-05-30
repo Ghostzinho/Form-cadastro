@@ -20,7 +20,7 @@ body{
     display: flex;
     position: relative;
     max-width: 1400px;
-    width: 969px;
+    width: 871px;
     height: 607px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.047);;
     background-color: #ffffff;
@@ -93,22 +93,26 @@ color: #03295a;
 font-weight: 500 !important;
 }
 
-.btn{
-    display: flex !important;
-    justify-content: end;
-    margin-right: -60px;
-    margin-top: 105px;
-    border-color: none;
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 549px;
 }
 
-.btn > input{
-    width: 2px !important;
-    padding-top: 10px;
-    padding-bottom: 10px;
+.main .child3 {
+    display: flex;
+    width: 100%;
+    height: 75px;
+    justify-content: flex-end;
 }
 
-#PE{
-    padding-right: 122px !important;
+.btn-primary{
+    height: 46px;
 }
 
-
+.lgpg > .main{
+    display: flex;
+    align-self: end;
+}
