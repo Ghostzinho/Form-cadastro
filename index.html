@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="script.js" />
+  <script src="script.js"></script>
   <link rel="stylesheet" href="style.css" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
   <title>Formulário de cadastro</title>
@@ -17,19 +17,19 @@
     <div class="taps">
         <div class="box d-flex flex-row">
             <div class="bord p-2 rounded-circle text-center"><p class="taps-ord">1</p></div>
-            <div class="tex p-2"><p class="description">1º ETAPA</p><p class="information">1º ETAPA</p></div>
+            <div class="tex p-2"><p class="description">1º ETAPA</p><p class="information">Suas Informações</p></div>
         </div>
         <div class="d-flex flex-row">
             <div class="bord p-2 rounded-circle text-center"><p class="taps-ord">2</p></div>
-            <div class="tex p-2"><p class="description">2º ETAPA</p><p class="information">1º ETAPA</p></div>
+            <div class="tex p-2"><p class="description">2º ETAPA</p><p class="information">Seleção de plano</p></div>
         </div>
         <div class="d-flex flex-row">
             <div class="bord p-2 rounded-circle text-center"><p class="taps-ord">3</p></div>
-            <div class="tex p-2"><p class="description">3º ETAPA</p><p class="information">1º ETAPA</p></div>
+            <div class="tex p-2"><p class="description">3º ETAPA</p><p class="information">Adicionais</p></div>
         </div>
         <div class="d-flex flex-row">
             <div class="bord p-2 rounded-circle text-center"><p class="taps-ord">4</p></div>
-            <div class="tex p-2"><p class="description">4º ETAPA</p><p class="information">1º ETAPA</p></div>
+            <div class="tex p-2"><p class="description">4º ETAPA</p><p class="information">Resumo</p></div>
         </div>
     </div>
     </div>
@@ -38,23 +38,25 @@
             <h1>Personal info</h1>
             <p>Please provide your name, email address, and phone number.</p>
             <div class="child2">
+                <form action="">
                 <div class="heading">
                     <div id="headingN">Nome</div>
-                    <input class="nome" type="text" placeholder="Vitor Mendes" required />
-                </div>    
+                    <input class="nome" type="" placeholder="Vitor Mendes" maxlength="32" onkeypress="return ApenasLetras(event,this)"; oninvalid="Text('Must contain 6 or more characters');" required />
+                </div>
                 <div class="heading">
                     <div id="headingE">Email</div>
-                    <input class="email" type="text" placeholder="vitormendes@gmail.com" required />
+                    <input class="email" type="email" maxlength="45"placeholder="vitormendes@gmail.com" oninvalid="teste" required />   
                 </div>    
                 <div class="heading">
                     <div id="headingT">Telefone</div>
-                    <input class="telefone" type="text" placeholder="(77) 7777-7777" required />
+                    <input onkeyup="handlePhone(event)" maxlength="11" class="telefone" type="tel" placeholder="(77) 7777-7777" required />
                 </div>    
                 </div>
         </div>
         <div class="child3">
             <button type="submit" class="btn btn-primary">Próxima Etapa</button>
         </div>
+    </form>
     </div>
     </div>
   </div>

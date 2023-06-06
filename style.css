@@ -168,7 +168,8 @@ font-weight: 400 !important;
 }
 
 .tex{
-    margin-top: -10px;
+    margin-left: 4px;
+    margin-top: -11px;
 }
 
 .description{
@@ -183,3 +184,8 @@ font-weight: 400 !important;
     font-weight: 900 !important;
     color: #fff;
 }
+
+input:invalid{
+    color: red;
+}
+
